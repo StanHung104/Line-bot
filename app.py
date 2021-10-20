@@ -44,7 +44,7 @@ def handle_message(event):
         r = '嗨'
     elif msg == '你吃飯了嗎':
         r = '還沒，你要請客嗎?'
-    elif msg == in ['你是誰', '你是誰?', '?', 'who are you']:
+    elif msg in ['你是誰', '你是誰?', '?', 'who are you']:
     	r = '我是Stan建置的機器人?'
 
     line_bot_api.reply_message(
